@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="logging_of_service_operations">
+    <title>Logging of service operations</title>
+    <shortdesc>This topic provides information about the log file where the Zipper service logs its operational details.</shortdesc>
+    <prolog>
+        <metadata>
+            <keywords>
+                <indexterm>log file <indexterm>about</indexterm></indexterm>
+                <indexterm>logging of service operations</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>The Zipper service logs details of each operation in the <b>ZipperServiceTrace.txt</b> trace file. The service creates this file automatically in the same folder where it is installed.</p>
+    </conbody>
+</concept>

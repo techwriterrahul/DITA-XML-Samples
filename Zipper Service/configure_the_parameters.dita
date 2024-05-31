@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="configure_the_parameters">
+    <title>Configure the parameters</title>
+    <shortdesc>Use the below procedure to configure the parameters for the Zipper service.</shortdesc>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Open the directory where the Zipper service is installed in your system.</cmd>
+                <info>Mostly, the service installs in the <b>C:\Program Files\Zipper Service</b> directory. If the service is not installed in the same directory in your system, search <userinput>Zipper Service</userinput> in the <uicontrol>Search</uicontrol> field of the <b>C</b> drive.</info>
+            </step>
+            <step>
+                <cmd>Right-click in blank space the directory, and then select <menucascade>
+                        <uicontrol>New</uicontrol>
+                        <uicontrol>Text Document</uicontrol>
+                    </menucascade> to have a Notepad file in the directory.</cmd>
+                <info>If you have any other text editor installed in your system, you can use its document to create the configuration file.</info>
+            </step>
+            <step>
+                <cmd>Rename the file to <userinput>Zipper Service</userinput>.</cmd>
+            </step>
+            <step>
+                <cmd>Double-click the file or right-click and select <uicontrol>Open</uicontrol> to open the file.</cmd>
+            </step>
+            <step>
+                <cmd>Create the <userinput>Zipping Values</userinput> and <userinput>Unzipping Values</userinput> sections in the file.</cmd>
+            </step>
+            <step>
+                <cmd>Add the parameters as shown in the below example and replace values given in the angled brackets with the actual values.</cmd>
+                <info><note>Make sure that the value of each parameter should be provided within the double quotation marks.</note><image href="Graphics/Zipper%20Service%20Parameters.png">
+                        <alt>An example of the parameters for the Zipper service.</alt>
+                    </image></info>
+            </step>
+            <step>
+                <cmd>Save the file.</cmd>
+            </step>
+        </steps>
+        <result>The configuration file is ready to use by the Zipper Service.</result>
+    </taskbody>
+    <related-links>
+        <link href="about_the_parameters.dita"/>
+    </related-links>
+</task>
