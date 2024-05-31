@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <title>User's Manual - Zipper Service</title>
+    <topicref href="about_the_zipper_service.dita"/>
+    <topicref href="install_the_zipper_service.dita"/>
+    <topicref href="about_the_service_parameters.dita"/>
+    <topicref href="configure_the_parameters.dita"/>
+    <topicref href="stages_in_zipping_and_unzipping_operations.dita"/>
+    <topicref href="run_the_zipper_service.dita"/>
+    <topicref href="log_details_of_the_zipper_service_operations.dita"/>
+</map>

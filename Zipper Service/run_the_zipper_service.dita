@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="run_the_zipper_service">
+    <title>Run the Zipper service</title>
+    <shortdesc>Use the below procedure to run the service.</shortdesc>
+    <prolog>
+        <author>Rahul Sharma</author>
+        <metadata>
+            <keywords>
+                <indexterm>running the Zipper service</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Make sure that the configuration file is created in the same directory where the service is installed, and the parameters have correct values.</cmd>
+                <info>
+                    <note>Every time you modify any parameter in the configuration file, make sure to restart the service to bring the change into effect.</note>
+                </info>
+            </step>
+            <step>
+                <cmd>Open the <b>Services</b> application to view the list of all the services in your system.</cmd>
+                <info>You can search the application by typing <userinput>Services</userinput> in the <uicontrol>Search</uicontrol> field on the Task bar.</info>
+            </step>
+            <step>
+                <cmd>Locate the Zipper service in the list of services.</cmd>
+            </step>
+            <step>
+                <cmd>Do one of the following to start the service:</cmd>
+                <info>
+                    <ul>
+                        <li>Select <uicontrol>Run the Service</uicontrol> available at the top of the left pane.</li>
+                        <li>Right-click the service and then select <uicontrol>Start</uicontrol> to run it.</li>
+                    </ul>
+                </info>
+            </step>
+        </steps>
+        <result>The service starts doing its operation.</result>
+    </taskbody>
+    <related-links>
+        <link href="configure_the_parameters.dita"/>
+    </related-links>
+</task>

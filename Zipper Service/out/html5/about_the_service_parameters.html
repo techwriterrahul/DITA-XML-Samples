@@ -1,0 +1,48 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="DC.rights.owner" content="(C) Copyright 2024"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><meta name="DC.type" content="concept"><meta name="description" content="This topic provides information about the parameters that are required by the Zipper service to perform its operation."><meta name="DC.subject" content="Parameters,about"><meta name="keywords" content="Parameters, about"><meta name="DC.relation" scheme="URI" content="configure_the_parameters.html"><meta name="DC.creator" content="Rahul Sharma"><meta name="DC.format" content="HTML5"><meta name="DC.identifier" content="about_the_service_parameters"><link rel="stylesheet" type="text/css" href="commonltr.css"><title>About the service parameters</title></head><body id="about_the_service_parameters"><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">About the service parameters</h1>
+    
+    
+    <div class="body conbody"><p class="shortdesc">This topic provides information about the parameters that are required by the Zipper service to perform its operation.</p>
+        <p class="p">Parameters are certain values that the service requires to perform its operation. The file in which you configure the parameters is known as configuration file. This file must end with <strong class="ph b">.ini</strong> extension to make it readable by the service. You can use any text editor, such as Notepad or Notepad++, to create the configuration file.</p>
+        <p class="p">You must be a system administrator to configure the parameters. Make sure that the configuration file is in the same directory where the Zipper service is installed. </p>
+        <p class="p">The following screen capture displays an example of the parameters in the configuration file. The <strong class="ph b">Zipping Values </strong>section lists the parameters that the service uses to zip files, and the <strong class="ph b">Unzipping Values</strong> section lists the parameters that the service uses to unzip files.</p>
+        <img class="image" src="Graphics/Zipper%20Service%20Parameters.png" alt="Configuration file showing the parameters.">
+        <p class="p">The parameters are explained in the below table.</p>
+        <div class="p">
+            <table class="table frame-all"><caption></caption><colgroup><col style="width:25%"><col style="width:75%"></colgroup><thead class="thead">
+                        <tr class="row">
+                            <th class="entry colsep-1 rowsep-1" id="about_the_service_parameters__entry__1">Parameter</th>
+                            <th class="entry colsep-1 rowsep-1" id="about_the_service_parameters__entry__2">Description</th>
+                        </tr>
+                    </thead><tbody class="tbody">
+                        <tr class="row">
+                            <td class="entry colsep-1 rowsep-1" headers="about_the_service_parameters__entry__1">Source Path</td>
+                            <td class="entry colsep-1 rowsep-1" headers="about_the_service_parameters__entry__2">Defines the source directory to pick files for zipping.</td>
+                        </tr>
+                        <tr class="row">
+                            <td class="entry colsep-1 rowsep-1" headers="about_the_service_parameters__entry__1">Destination Path</td>
+                            <td class="entry colsep-1 rowsep-1" headers="about_the_service_parameters__entry__2">Defines the destination directory to save the zipped file.</td>
+                        </tr>
+                        <tr class="row">
+                            <td class="entry colsep-1 rowsep-1" headers="about_the_service_parameters__entry__1">Interval in minutes</td>
+                            <td class="entry colsep-1 rowsep-1" headers="about_the_service_parameters__entry__2">Defines the gap between two consecutive executions of the service. For example, in the configuration given above, the gap between two consecutive executions is 5 minutes.</td>
+                        </tr>
+                        <tr class="row">
+                            <td class="entry colsep-1 rowsep-1" headers="about_the_service_parameters__entry__1">Trigger File</td>
+                            <td class="entry colsep-1 rowsep-1" headers="about_the_service_parameters__entry__2">Defines the files extension that the service should recognize in the source directory to begin the zipping operation. In the absence of this file, the service can not start zipping.<p class="p">Note that the source folder should have only one file with the extension that is defined in the <strong class="ph b">TriggerFile</strong> parameter. For example, in the above parameters, the trigger file is a file with the .oxi extension.</p></td>
+                        </tr>
+                        <tr class="row">
+                            <td class="entry colsep-1 rowsep-1" headers="about_the_service_parameters__entry__1">Unzip from Path</td>
+                            <td class="entry colsep-1 rowsep-1" headers="about_the_service_parameters__entry__2">Defines the source directory to pick a zip file for extraction.</td>
+                        </tr>
+                        <tr class="row">
+                            <td class="entry colsep-1 rowsep-1" headers="about_the_service_parameters__entry__1">Unzip to Path</td>
+                            <td class="entry colsep-1 rowsep-1" headers="about_the_service_parameters__entry__2">Defines the destination directory to keep the extracted files. The service creates folder in the given directory with the same name as the zip file being unzipped.</td>
+                        </tr>
+                    </tbody></table>
+        </div>
+    </div>
+    <nav role="navigation" class="related-links"><div class="linklist reltasks"><strong>Related tasks</strong><br><ul class="linklist"><li class="linklist"><a class="link" href="configure_the_parameters.html" title="Use the below procedure to configure the parameters for the Zipper service.">Configure the parameters</a></li></ul></div></nav>
+</article></main></body></html>
